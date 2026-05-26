@@ -223,10 +223,10 @@ button {
 }
 
 .hero {
-  min-height: 100svh;
+  min-height: 92svh;
   display: grid;
-  align-items: end;
-  padding: 18px 16px 26px;
+  align-items: center;
+  padding: 42px 16px 26px;
 }
 
 .hero-media {
@@ -240,14 +240,14 @@ button {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(41, 31, 24, 0.14), rgba(41, 31, 24, 0.18) 40%, rgba(255, 250, 240, 0.95) 92%),
-    linear-gradient(90deg, rgba(255, 250, 240, 0.5), transparent 46%);
+    linear-gradient(180deg, rgba(255, 250, 240, 0.18), rgba(255, 250, 240, 0.7) 46%, rgba(255, 250, 240, 0.9)),
+    radial-gradient(circle at 50% 44%, rgba(255, 253, 248, 0.9), rgba(255, 253, 248, 0.18) 42%, rgba(255, 250, 240, 0.64));
 }
 
 .hero-media img {
   height: 100%;
   object-fit: cover;
-  object-position: 58% center;
+  object-position: center;
   animation: softZoom 18s ease-in-out infinite alternate;
 }
 
@@ -263,7 +263,7 @@ button {
 .hero-copy {
   width: min(100%, 640px);
   margin: 0 auto;
-  padding-top: 42vh;
+  padding-top: 0;
   text-align: center;
 }
 
@@ -286,10 +286,22 @@ p {
 }
 
 h1 {
-  margin-bottom: 14px;
-  font-size: clamp(3.5rem, 21vw, 7.6rem);
-  line-height: 0.82;
+  display: grid;
+  gap: 0;
+  margin-bottom: 16px;
+  font-size: clamp(4.3rem, 23vw, 8rem);
+  line-height: 0.74;
   font-weight: 500;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 .amp {
+  font-size: 0.56em;
+  line-height: 0.86;
+  color: var(--champagne-deep);
 }
 
 h2 {
@@ -312,6 +324,13 @@ h3 {
   color: var(--muted);
   font-family: "Trebuchet MS", Arial, sans-serif;
   line-height: 1.62;
+}
+
+.intro-line {
+  width: min(100%, 390px);
+  margin: 0 auto 14px;
+  color: var(--ink);
+  font-size: 0.96rem;
 }
 
 .date-card {
@@ -436,7 +455,6 @@ h3 {
 }
 
 .timeline {
-  position: relative;
   display: grid;
   gap: 18px;
   width: min(100%, 620px);
@@ -444,21 +462,10 @@ h3 {
   text-align: left;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  bottom: 8px;
-  left: 48px;
-  width: 1px;
-  background: linear-gradient(var(--champagne-deep), rgba(201, 152, 79, 0.08));
-}
-
 .timeline-item {
-  position: relative;
   display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 14px;
+  grid-template-columns: 82px 1fr;
+  gap: 12px;
   align-items: start;
   padding: 18px 16px;
   border: 1px solid rgba(201, 152, 79, 0.26);
@@ -467,22 +474,20 @@ h3 {
   box-shadow: 0 14px 32px rgba(78, 55, 33, 0.07);
 }
 
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  top: 29px;
-  left: 43px;
-  width: 11px;
-  height: 11px;
-  border: 3px solid var(--champagne-deep);
-  border-radius: 50%;
-  background: var(--white);
-}
-
 .timeline-item time {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 8px;
+  border: 1px solid rgba(201, 152, 79, 0.34);
+  border-radius: 999px;
   color: var(--champagne-deep);
+  background: rgba(255, 250, 240, 0.88);
   font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 0.82rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .timeline-item p {
@@ -531,7 +536,7 @@ h3 {
   }
 
   .hero {
-    min-height: 92vh;
+    min-height: 88vh;
     padding: 64px 40px;
     align-items: center;
   }
