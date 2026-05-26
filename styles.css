@@ -215,7 +215,7 @@ button {
   min-height: 78svh;
   display: grid;
   align-items: start;
-  padding: 18px 16px 24px;
+  padding: 42px 16px 24px;
 }
 
 .hero-media {
@@ -229,8 +229,8 @@ button {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(255, 250, 240, 0.72), rgba(255, 250, 240, 0.82) 42%, rgba(255, 250, 240, 0.94)),
-    radial-gradient(circle at 50% 28%, rgba(255, 253, 248, 0.96), rgba(255, 253, 248, 0.58) 36%, rgba(255, 250, 240, 0.72));
+    linear-gradient(180deg, rgba(255, 250, 240, 0.28), rgba(255, 250, 240, 0.48) 46%, rgba(255, 250, 240, 0.72)),
+    radial-gradient(circle at 50% 34%, rgba(255, 253, 248, 0.72), rgba(255, 253, 248, 0.28) 42%, rgba(255, 250, 240, 0.44));
 }
 
 .hero-media img {
@@ -252,10 +252,10 @@ button {
 .hero-copy {
   width: min(100%, 640px);
   margin: 0 auto;
-  padding: 18px 14px 16px;
+  padding: 20px 15px 17px;
   border: 1px solid rgba(201, 152, 79, 0.2);
   border-radius: 8px;
-  background: rgba(255, 253, 248, 0.74);
+  background: rgba(255, 253, 248, 0.62);
   box-shadow: 0 16px 44px rgba(78, 55, 33, 0.08);
   backdrop-filter: blur(10px);
   text-align: center;
