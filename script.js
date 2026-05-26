@@ -1,4 +1,4 @@
-const intro = document.querySelector(".envelope-intro");
+const intro = document.querySelector(".door-intro");
 const openButton = document.querySelector(".open-invite");
 const petalsLayer = document.querySelector(".petals");
 const countdownTarget = new Date("2026-06-13T20:30:00+02:00").getTime();
