@@ -479,7 +479,7 @@ h3 {
   align-items: center;
   justify-content: center;
   justify-self: start;
-  min-width: 86px;
+  min-width: 120px;
   min-height: 34px;
   padding: 6px 8px;
   border: 1px solid rgba(201, 152, 79, 0.34);
@@ -490,6 +490,7 @@ h3 {
   font-size: 0.82rem;
   font-weight: 700;
   text-align: center;
+  white-space: nowrap;
 }
 
 .timeline-item p {
@@ -559,7 +560,7 @@ h3 {
   }
 
   .timeline-item {
-    grid-template-columns: 96px 1fr;
+    grid-template-columns: 132px 1fr;
     gap: 16px;
   }
 
